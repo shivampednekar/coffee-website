@@ -1,0 +1,21 @@
+{
+  "name": "coffee_website-design",
+  "version": "1.0.0",
+  "description": "Responsive Coffee Website Using HTML CSS & JavaScript.",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass styles/sass/index.scss styles/css/style.css -w"
+  },
+  "keywords": [
+    "coffee",
+    "website",
+    "landing",
+    "page",
+    "inspiration"
+  ],
+  "author": "Shivam Pednekar",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^7.0.1"
+  }
+}
