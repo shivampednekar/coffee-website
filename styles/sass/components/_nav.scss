@@ -1,0 +1,81 @@
+/*=============== HEADER & NAV ===============*/
+.header {
+  background: transparent;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: var(--z-fixed);
+}
+
+.nav {
+  height: 3.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__logo {
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    column-gap: 0.5rem;
+
+    &-img {
+      width: 0.75rem;
+    }
+  }
+
+  &__toggle {
+    display: inline-flex;
+    font-size: 1.15rem;
+    cursor: pointer;
+  }
+}
+
+@media screen and (min-width: 767px) {
+  .nav__menu {
+    background-color: var(--black-color);
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 100%;
+    height: 100%;
+    transition: 0.3s;
+  }
+}
+
+.nav__logo,
+.nav__toggle {
+  color: #fafafa;
+}
+
+.nav__list {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  row-gap: 3rem;
+  padding-top: 9rem;
+}
+
+.nav__link {
+  text-transform: uppercase;
+  color: var(--text-color-light);
+  font-size: 1.12rem;
+
+  &:hover {
+    color: #fff;
+  }
+}
+
+.nav__close {
+  color: #fafafa;
+  font-size: 2rem;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  cursor: pointer;
+}
+
+.show-menu {
+  right: 0;
+}

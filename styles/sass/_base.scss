@@ -15,7 +15,7 @@
 
 html {
   scroll-behavior: smooth;
-  box-sizing: border-box;
+  // box-sizing: border-box;
 }
 
 body {
@@ -57,4 +57,44 @@ button {
   border: none;
   outline: none;
   cursor: pointer;
+}
+
+/*=============== REUSABLE CSS CLASSES ===============*/
+.container {
+  // max-width: 1024px;
+  // width: 100%;
+  // margin-left: 1.5rem;
+  // margin-right: 1.5rem;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  z-index: 2;
+}
+
+.grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.section {
+  padding: 4.5rem 0 2rem;
+}
+
+.section__title {
+  position: relative;
+  font-size: var(--h1-font-size);
+  padding-left: 1.25rem;
+  margin-bottom: 2.5rem;
+}
+
+.section__title::before {
+  content: '';
+  position: absolute;
+  top: 8px;
+  left: 0;
+  width: 3px;
+  height: 20px;
+  background-color: var(--first-color);
 }
