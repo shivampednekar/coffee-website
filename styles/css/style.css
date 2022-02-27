@@ -116,7 +116,7 @@ button {
   left: 0;
   width: 3px;
   height: 20px;
-  background-color: var(--first-color); }
+  background-color: var(--primary); }
 
 /*=============== HEADER & NAV ===============*/
 .header {
@@ -240,3 +240,39 @@ button {
     transform: translateY(-0.5rem); }
   100% {
     transform: translateY(0%); } }
+
+.button {
+  display: inline-block;
+  background-color: var(--black-color);
+  color: #fafafa;
+  font-size: var(--normal-font-size);
+  text-transform: uppercase;
+  border-radius: 0.25rem;
+  padding: 1rem 1.75rem; }
+
+/*=============== SPECIALTY ===============*/
+.specialty__button {
+  margin-left: 1.25rem; }
+
+.specialty__category {
+  display: grid;
+  grid-template-columns: 200px;
+  row-gap: 2.5rem;
+  justify-content: center;
+  margin-top: 4rem; }
+
+.specialty__img {
+  width: 60px;
+  margin-bottom: 1rem;
+  transition: 0.4s; }
+
+.specialty__group {
+  text-align: center; }
+
+.specialty__title {
+  font-size: var(--h2-font-size);
+  margin-bottom: 0.25rem; }
+
+.specialty__group:hover,
+.specialty__img {
+  transform: translateY(-0.25rem); }
