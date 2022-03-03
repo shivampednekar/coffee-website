@@ -54,7 +54,7 @@ html {
   scroll-behavior: smooth; }
 
 body {
-  font-family: var(--body-font);
+  font-family: Satoshi;
   font-size: var(--normal-font-size);
   background-color: var(--body-color);
   color: var(--text-color); }
@@ -241,6 +241,7 @@ button {
   100% {
     transform: translateY(0%); } }
 
+/*=============== SPECIALTY ===============*/
 .button {
   display: inline-block;
   background-color: var(--black-color);
@@ -345,3 +346,60 @@ button {
 /* Active link products */
 .active-product .products__title {
   color: var(--primary); }
+
+/*=============== QUALITY ===============*/
+.quality {
+  background-color: #fff; }
+
+.quality__content {
+  row-gap: 2.5rem; }
+  .quality__content .quality__image {
+    position: relative;
+    justify-self: center; }
+    .quality__content .quality__image .quality_big,
+    .quality__content .quality__image .quality_small {
+      border-radius: 0.5rem; }
+    .quality__content .quality__image .quality_big {
+      width: 280px; }
+    .quality__content .quality__image .quality_small {
+      width: 100px;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      margin: auto 0;
+      transform: translateX(-5rem); }
+
+.quality__title,
+.quality__price {
+  font-size: var(--h1-font-size); }
+
+.quality__title {
+  margin-bottom: 0.75rem; }
+
+.quality__price {
+  color: var(--text-color);
+  margin-bottom: 0.25rem; }
+
+.quality__special {
+  display: block;
+  font-size: var(--small-font-size);
+  margin-bottom: 0.75rem; }
+
+.quality__decription {
+  color: var(--text-color-light);
+  margin-bottom: 2.5rem; }
+
+.quality__buttons {
+  display: flex;
+  align-items: center;
+  column-gap: 2rem; }
+
+.quality_button {
+  color: var(--text-color);
+  font-size: var(--normal-font-size);
+  text-transform: uppercase; }
+  .quality_button i {
+    font-size: 1.25rem;
+    transition: 0.4s; }
+  .quality_button:hover i {
+    transform: translateX(0.25rem); }

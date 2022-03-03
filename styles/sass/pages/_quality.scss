@@ -1,0 +1,77 @@
+/*=============== QUALITY ===============*/
+.quality {
+  background-color: #fff;
+}
+
+.quality__content {
+  row-gap: 2.5rem;
+
+  .quality__image {
+    position: relative;
+    justify-self: center;
+
+    .quality_big,
+    .quality_small {
+      border-radius: 0.5rem;
+    }
+
+    .quality_big {
+      width: 280px;
+    }
+
+    .quality_small {
+      width: 100px;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      margin: auto 0;
+      transform: translateX(-5rem);
+    }
+  }
+}
+
+.quality__title,
+.quality__price {
+  font-size: var(--h1-font-size);
+}
+
+.quality__title {
+  margin-bottom: 0.75rem;
+}
+
+.quality__price {
+  color: var(--text-color);
+  margin-bottom: 0.25rem;
+}
+
+.quality__special {
+  display: block;
+  font-size: var(--small-font-size);
+  margin-bottom: 0.75rem;
+}
+
+.quality__decription {
+  color: var(--text-color-light);
+  margin-bottom: 2.5rem;
+}
+
+.quality__buttons {
+  display: flex;
+  align-items: center;
+  column-gap: 2rem;
+}
+
+.quality_button {
+  color: var(--text-color);
+  font-size: var(--normal-font-size);
+  text-transform: uppercase;
+
+  & i {
+    font-size: 1.25rem;
+    transition: 0.4s;
+  }
+
+  &:hover i {
+    transform: translateX(0.25rem);
+  }
+}
