@@ -1,0 +1,25 @@
+/*=============== LOGOS ===============*/
+.logo {
+  background-color: #fff;
+
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    align-items: center;
+    gap: 2.5rem;
+    border-top: 1px solid var(--text-color-light);
+    padding-top: 2.5rem;
+  }
+
+  &__img {
+    width: 80px;
+    mix-blend-mode: luminosity;
+    opacity: 0.4;
+    transition: 0.4s;
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+}
