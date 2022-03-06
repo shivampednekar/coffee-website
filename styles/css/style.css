@@ -422,3 +422,52 @@ button {
     transition: 0.4s; }
     .logo__img:hover {
       opacity: 0.8; }
+
+/*=============== BLOG ===============*/
+.blog__container {
+  padding-bottom: 2rem; }
+
+.blog__content {
+  row-gap: 3rem; }
+
+.blog__image {
+  position: relative;
+  margin-bottom: 1.5rem; }
+  .blog__image img {
+    border-radius: 0.5rem; }
+  .blog__image .blog__button {
+    background-color: #fafafa;
+    color: var(--title-color);
+    display: inline-flex;
+    font-size: 2rem;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    padding: 1.15rem;
+    border-radius: 0.5rem 0 0.5rem 0; }
+    .blog__image .blog__button i {
+      transform: rotate(-30deg);
+      transition: 0.4s; }
+    .blog__image .blog__button:hover i {
+      transform: rotate(-30deg) translateX(0.25em); }
+
+.blog__title {
+  font-size: var(--h1-font-size);
+  margin-bottom: 0.75rem; }
+
+.blog__description {
+  color: var(--text-color);
+  margin-bottom: 1.5rem; }
+
+.blog__stack,
+.blog__reaction {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
+
+.blog__reaction {
+  column-gap: 0.25rem; }
+  .blog__reaction i {
+    font-size: 1.25rem; }
+  .blog__reaction span {
+    font-size: var(--small-font-size); }
