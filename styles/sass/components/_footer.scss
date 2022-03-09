@@ -1,0 +1,112 @@
+/*=============== FOOTER ===============*/
+.footer {
+  background-color: var(--black-color);
+  padding: 4rem 0 2.5rem;
+
+  &__title {
+    color: #fafafa;
+    font-family: Marmo;
+    font-size: var(--h1-font-size);
+    margin-bottom: 2rem;
+  }
+}
+
+.footer__description {
+  margin-bottom: 0.75rem;
+}
+
+.footer__newsletter {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1.6rem;
+}
+
+.footer__input {
+  color: var(--text-color);
+  // width: 70%;
+  padding: 1.2rem 1rem;
+  border-radius: 0.25rem;
+  border: none;
+  outline: none;
+  transition: border 0.3s, box-shadow 0.3s;
+  // border: 1px solid #dee2e6;
+
+  &:focus {
+    border: 2px solid var(--primary);
+    box-shadow: inset 1px 1px 2px 0 var(--primary-alt);
+  }
+}
+
+.footer__button {
+  background-color: #434a54;
+  color: #fafafa;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1;
+  align-items: center;
+  padding: 12px 24px;
+  cursor: pointer;
+  border: none;
+  border-radius: 3px;
+  outline: none;
+  -webkit-transition: all 0.3 ease;
+  transition: all 0.3 ease;
+
+  & i {
+    transform: rotate(-30deg);
+    transition: 0.4s;
+  }
+  // width: 70%;
+}
+
+.footer__button:hover,
+.footer__button:active,
+.footer__button:focus {
+  background-color: var(--text-color); //#6c757d
+}
+
+.footer__button:hover i {
+  transform: rotate(-30deg) translate(0.25rem);
+}
+
+.footer__content {
+  row-gap: 2.5rem;
+  padding-bottom: 2.5rem;
+  border-bottom: 1px solid var(--text-color);
+}
+
+.footer__subtitle {
+  color: #fafafa;
+  font-size: var(--h2-font-size);
+  letter-spacing: 0.5px;
+  margin-bottom: 0.55rem;
+}
+
+.footer__information {
+  color: var(--text-color);
+  line-height: 1.7;
+}
+
+.footer__flag {
+  width: 1.4rem;
+}
+
+.footer__group {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 1.5rem;
+}
+
+.footer__social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 2rem;
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+
+  & a {
+    color: #fafafa;
+  }
+}

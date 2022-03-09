@@ -2,4 +2,4 @@
 
 ### Created this from scratch using HTML, CSS and JS Vanilla only.
 
-<!-- Completed 1HR 53MIn 40S -->
+<!-- Completed 1HR 18MIn 56S -->

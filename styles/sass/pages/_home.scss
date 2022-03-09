@@ -63,20 +63,6 @@
   color: #fafafa;
 }
 
-.scroll-header {
-  background-color: var(--body-color);
-  box-shadow: 0 1px 4px hsla(0, 4%, 15%, 0.1);
-
-  .nav__logo,
-  .nav__toggle {
-    color: var(--text-color);
-  }
-
-  .nav__logo-img {
-    mix-blend-mode: difference;
-  }
-}
-
 @keyframes scroll {
   0% {
     transform: translateY(0%);
